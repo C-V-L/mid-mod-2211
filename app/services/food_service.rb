@@ -11,6 +11,6 @@ class FoodService
   end
 
   def self.search(search_term)
-    get_url("/fdc/v1/foods/search?query=#{search_term}&api_key=#{ENV['api_key']}")
+    get_url("/fdc/v1/foods/search?query=#{search_term}&api_key=#{ENV['api_key']}&sortOrder=asc")
   end
 end
