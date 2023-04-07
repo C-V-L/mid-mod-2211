@@ -1,0 +1,8 @@
+<%= "Total Number of Results: #{@facade.total_results}" %>
+  <% @facade.food_list.each do |food| %>
+  <ul class='food'>
+  <%= "GTIN/UPC Code: #{food.code}" %>
+  <%= "Description: #{food.description}" %>
+  <%= "Brand Owner: #{food.brand}" %>
+  <%= "Ingredients: #{food.ingredients}" %>
+<% end %>
