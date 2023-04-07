@@ -7,8 +7,9 @@ RSpec.describe Food do
       description: 'SWEET POTATOES',
       brandOwner: 'NOT A BRANDED ITEM',
       ingredients: 'ORGANIC SWEET POTATOES.' }
-    
+      
     food = Food.new(attrs)
+
     expect(food).to be_a(Food)
     expect(food.code).to eq('8901020020844')
     expect(food.description).to eq('SWEET POTATOES')

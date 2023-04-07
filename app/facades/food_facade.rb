@@ -1,4 +1,4 @@
-class FoodsFacade
+class FoodFacade
   def initialize(search_term)
     @search_term = search_term
   end
